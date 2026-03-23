@@ -17,7 +17,7 @@ public class ChatController {
         this.geminiService = geminiService;
     }
 
-    @GetMapping(value = "/api/chat/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    @GetMapping(value = "/api/chat", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public SseEmitter streamChat(@RequestParam String prompt) {
 
         System.out.println("📩 Prompt received: " + prompt);

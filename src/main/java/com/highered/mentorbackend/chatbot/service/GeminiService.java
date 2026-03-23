@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class GeminiService {
 
-    @Value("${gemini.api.key}")
+    @Value("${GEMINI_API_KEY}")
     private String apiKey;
     @Autowired
 
